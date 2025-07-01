@@ -15,6 +15,7 @@ public class RedirectController {
 
 //    @GetMapping("/{shortCode}")
 
+
 @GetMapping("/r/{shortCode}")
     public ResponseEntity<?> redirectToOriginal(@PathVariable String shortCode) {
         return repository.findByShortCode(shortCode)
