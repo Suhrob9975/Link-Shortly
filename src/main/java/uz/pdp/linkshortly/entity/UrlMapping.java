@@ -1,6 +1,7 @@
 package uz.pdp.linkshortly.entity;
 
 import jakarta.persistence.*;
+
 import lombok.*;
 
 @Entity
