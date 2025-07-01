@@ -1,0 +1,215 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Link Shortener</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            background-color: #f1f1f1;-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            align-items: center;-->
+<!--            margin-top: 100px;-->
+<!--        }-->
+<!--        .container {-->
+<!--            background-color: white;-->
+<!--            padding: 30px;-->
+<!--            border-radius: 10px;-->
+<!--            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);-->
+<!--        }-->
+<!--        input[type="text"] {-->
+<!--            width: 300px;-->
+<!--            padding: 10px;-->
+<!--            border-radius: 5px;-->
+<!--            border: 1px solid #ccc;-->
+<!--        }-->
+<!--        button {-->
+<!--            padding: 10px 20px;-->
+<!--            margin-left: 10px;-->
+<!--            background-color: #28a745;-->
+<!--            color: white;-->
+<!--            border: none;-->
+<!--            border-radius: 5px;-->
+<!--        }-->
+<!--        #result {-->
+<!--            margin-top: 20px;-->
+<!--            font-weight: bold;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <h2>🔗 Linkni Qisqartirish</h2>-->
+<!--    <input type="text" id="urlInput" placeholder="Uzun linkni kiriting...">-->
+<!--    <button onclick="shorten()">Qisqartir</button>-->
+<!--    <div id="result"></div>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    function shorten() {-->
+<!--        const url = document.getElementById("urlInput").value;-->
+
+<!--        fetch("/api/shorten", {-->
+<!--            method: "POST",-->
+<!--            headers: {-->
+<!--                "Content-Type": "application/json"-->
+<!--            },-->
+<!--            body: JSON.stringify({ url: url })-->
+<!--        })-->
+
+
+<!--                .then(response => {-->
+<!--                if (!response.ok) {-->
+<!--                    throw new Error("Server error: " + response.status);-->
+<!--                }-->
+<!--                return response.text();-->
+<!--            })-->
+<!--            .then(shortUrl => {-->
+<!--                document.getElementById("result").innerHTML = `<a href="${shortUrl}" target="_blank">${shortUrl}</a>`;-->
+<!--            })-->
+<!--            .catch(error => {-->
+<!--                document.getElementById("result").innerText = "Xatolik yuz berdi: " + error;-->
+<!--            });-->
+<!--    }-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Linkni Qisqartir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-...your-key..."
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #2575fc;
+            box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+        }
+
+        button {
+            background-color: #2575fc;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1a5cd8;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e7f1ff;
+            border: 1px solid #b6d4ff;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .result a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .result a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #2575fc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="icon"><i class="fa-solid fa-link"></i></div>
+    <h1>Linkni Qisqartir</h1>
+    <input type="text" id="urlInput" placeholder="Masalan: https://example.com/some/very/long/url" />
+    <button onclick="shorten()">Qisqartirish</button>
+    <div id="result" class="result" style="display:none;"></div>
+</div>
+
+<script>
+    function shorten() {
+        const url = document.getElementById("urlInput").value;
+        if (!url) {
+            alert("Iltimos, link kiriting!");
+            return;
+        }
+
+        fetch("/api/shorten", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ url: url })
+        })
+            .then(response => {
+                if (!response.ok) throw new Error("Xatolik: " + response.status);
+                return response.text();
+            })
+            .then(shortUrl => {
+                const result = document.getElementById("result");
+                result.style.display = "block";
+                result.innerHTML = `Qisqartirilgan link: <a href="${shortUrl}" target="_blank">${shortUrl}</a>`;
+            })
+            .catch(error => {
+                const result = document.getElementById("result");
+                result.style.display = "block";
+                result.innerHTML = "Xatolik yuz berdi: " + error.message;
+            });
+    }
+</script>
+</body>
+</html>

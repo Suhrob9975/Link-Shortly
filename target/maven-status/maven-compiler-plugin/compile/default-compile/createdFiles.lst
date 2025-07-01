@@ -1,0 +1,5 @@
+uz\pdp\linkshortly\entity\UrlMapping.class
+uz\pdp\linkshortly\controller\UrlController.class
+uz\pdp\linkshortly\LinkShortlyApplication.class
+uz\pdp\linkshortly\repository\UrlMappingRepository.class
+uz\pdp\linkshortly\service\UrlService.class
