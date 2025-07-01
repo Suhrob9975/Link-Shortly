@@ -10,15 +10,12 @@ public class HomeController {
 
     @GetMapping("/")
     public String root() {
-
         return "forward:/index.html";
-
     }
 
     @GetMapping("/api/")
     public String apiHome() {
-
         return "forward:/index.html";
-
     }
+
 }
