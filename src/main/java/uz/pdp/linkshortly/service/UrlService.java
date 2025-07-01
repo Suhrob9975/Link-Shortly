@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import uz.pdp.linkshortly.entity.UrlMapping;
 import uz.pdp.linkshortly.repository.UrlMappingRepository;
 
-import java.util.Optional;
 import java.util.Random;
 
 @Service
