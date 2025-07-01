@@ -12,11 +12,8 @@ import java.util.Map;
 @RequestMapping("/api")
 public class UrlController {
 
-
-
     @Autowired
     private UrlService urlService;
-
 
     @PostMapping("/shorten")
     public String shorten(@RequestBody Map<String, String> body) throws Exception {

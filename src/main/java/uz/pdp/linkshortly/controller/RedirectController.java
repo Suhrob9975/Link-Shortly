@@ -7,6 +7,10 @@ import uz.pdp.linkshortly.repository.UrlMappingRepository;
 
 import java.net.URI;
 
+/**
+ * Created by: suhrob
+ */
+
 @RestController
 public class RedirectController {
 
