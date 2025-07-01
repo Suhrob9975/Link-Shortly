@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="0049a125-b9c0-4585-a574-dd480e35b9e0" name="Changes" comment="The project has been completed." />
     <list default="true" id="0049a125-b9c0-4585-a574-dd480e35b9e0" name="Changes" comment="changed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="suhrob-dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -41,8 +47,13 @@
     },
     "owner": "Suhrob9975",
     "repository": "Link-Shortly"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Suhrob9975/Link-Shortly.git&quot;,
+    &quot;accountId&quot;: &quot;032c7c91-ddce-4be8-8995-8f169c9a67a4&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -72,7 +83,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.LinkShortlyApplication.executor": "Run",
-    "git-widget-placeholder": "suhrob-dev",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -121,15 +132,7 @@
       <option name="project" value="LOCAL" />
       <updated>1751394985241</updated>
     </task>
-    <task id="LOCAL-00002" summary="changed">
-      <option name="closed" value="true" />
-      <created>1751399566823</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1751399566823</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +140,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="The project has been completed." />
-    <MESSAGE value="changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="The project has been completed." />
   </component>
 </project>
