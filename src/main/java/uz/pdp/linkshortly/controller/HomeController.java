@@ -13,9 +13,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String root() {
-
         return "forward:/index.html";
-
     }
 
     @GetMapping("/api/")
