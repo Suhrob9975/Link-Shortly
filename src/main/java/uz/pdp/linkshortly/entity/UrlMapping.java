@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 
 import lombok.*;
 
+/**
+ * Created by: suhrob
+ */
+
 @Entity
 @Data
 @AllArgsConstructor
