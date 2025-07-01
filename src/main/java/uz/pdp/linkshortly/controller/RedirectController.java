@@ -13,7 +13,6 @@ public class RedirectController {
     @Autowired
     private UrlMappingRepository repository;
 
-//    @GetMapping("/{shortCode}")
 
 @GetMapping("/r/{shortCode}")
     public ResponseEntity<?> redirectToOriginal(@PathVariable String shortCode) {

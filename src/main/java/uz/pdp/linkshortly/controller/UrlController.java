@@ -28,7 +28,6 @@ public class UrlController {
         }
         UrlMapping mapping = urlService.createShortUrl(url);
 
-//        return "http://localhost:8080/" + mapping.getShortCode();
 
 //        return "http://localhost:8080/r/" + mapping.getShortCode();
 
