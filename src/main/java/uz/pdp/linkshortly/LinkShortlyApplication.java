@@ -9,6 +9,5 @@ public class LinkShortlyApplication {
 
         SpringApplication.run(LinkShortlyApplication.class, args);
 
-
     }
 }
