@@ -43,9 +43,7 @@ public class UrlService {
     }
 
 
-    public Optional<UrlMapping> getOriginalUrl(String shortCode) {
-        return repository.findByShortCode(shortCode);
-    }
+
 
 
 
