@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0049a125-b9c0-4585-a574-dd480e35b9e0" name="Changes" comment="The project has been completed.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0049a125-b9c0-4585-a574-dd480e35b9e0" name="Changes" comment="The project has been completed." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,21 +18,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="suhrob-dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Suhrob9975"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Suhrob9975&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Suhrob9975/Link-Shortly.git",
-    "accountId": "032c7c91-ddce-4be8-8995-8f169c9a67a4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Suhrob9975/Link-Shortly.git&quot;,
+    &quot;accountId&quot;: &quot;032c7c91-ddce-4be8-8995-8f169c9a67a4&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -64,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.LinkShortlyApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "suhrob__dev",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -104,6 +107,7 @@
       <workItem from="1751378261102" duration="7632000" />
       <workItem from="1751387457167" duration="31000" />
       <workItem from="1751387504199" duration="3844000" />
+      <workItem from="1751398338361" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="The project has been completed.">
       <option name="closed" value="true" />
@@ -113,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751394985241</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The project has been completed.">
+      <option name="closed" value="true" />
+      <created>1751398356702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751398356702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
