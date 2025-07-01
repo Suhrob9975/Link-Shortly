@@ -1,13 +1,11 @@
 package uz.pdp.linkshortly.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import uz.pdp.linkshortly.entity.UrlMapping;
 import uz.pdp.linkshortly.service.UrlService;
 
 import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.util.Map;
 
 @RestController
