@@ -17,22 +17,20 @@ Link Shortly — bu qisqa va oson esda qoladigan havolalar (URL) yaratish uchun 
 2. Loyihaga o‘ting va kerakli kutubxonalarni o‘rnating:
    ```bash
    cd link-shortly
-   # Python uchun misol:
-   pip install -r requirements.txt
-   # yoki Node.js uchun:
-   npm install
+   # Java uchun:
+   ./gradlew build
    ```
 3. Dastur(ni) ishga tushiring:
    ```bash
-   # Python:
-   python main.py
-   # yoki Node.js:
-   npm start
+   # Java uchun:
+   ./gradlew bootRun
+   # yoki:
+   java -jar build/libs/link-shortly.jar
    ```
 
 ## Foydalanish
 
-1. Brauzeringizda localhost:XXXX manziliga o‘ting.
+1. Brauzeringizda `http://localhost:8080` manziliga o‘ting.
 2. Uzun havolani kiriting va “Qisqartirish” tugmasini bosing.
 3. Sizga qisqa havola taqdim etiladi.
 
