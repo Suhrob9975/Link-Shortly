@@ -13,6 +13,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UrlMapping {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,4 +26,5 @@ public class UrlMapping {
 
     @Column(nullable = false)
     private Integer clickCount = 0;
+    
 }
